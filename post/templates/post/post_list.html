@@ -1,11 +1,8 @@
 <h1>HOSSAM App For BLOG</h1>
 
-
-
 {% for post in object_list %}
 
-
 <h3> <a href="{% url 'blog:post_details' post.id %}">  {{ post }}</a></h3>
-  
    
 {% endfor %}
+

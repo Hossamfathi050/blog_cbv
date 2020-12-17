@@ -1,9 +1,9 @@
+
 from django.shortcuts import render
-from django.shortcuts import render
+from .models import Post
+
 from django.views.generic import ListView, DeleteView, UpdateView
 
-# Create your views here.
-from .models import Post
 
 
 class PostList(ListView):
@@ -19,4 +19,3 @@ class PostUpdate(UpdateView):
     fields =['title','content']
     template_name='post/post_edit.html'
     
-
