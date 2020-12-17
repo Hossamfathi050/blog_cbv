@@ -6,14 +6,13 @@ app_name='post'
 
 
 urlpatterns = [
-   # path('', views.post_list,name='post_list'),
-    path('<int:id>', views.post_details,name='post_details'),
-    
-    path('<int:id>/edit', views.post_edit,name='post_edit'),
-    path('create', views.post_create,name='post_create'),
-
 
     path('cbv', views.PostList.as_view(),name='post_list_cbv'),
+
     path('cbv/<int:pk>',views.PostDetail.as_view(),name='post_details_cbv'),
+
+    path('cbv/<int:pk>/edit',views.PostUpdate.as_view(),name='post_update_cbv'),
+
+
 
 ]
