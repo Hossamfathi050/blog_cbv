@@ -2,7 +2,7 @@
 
 
 
-{% for post in all_posts %}
+{% for post in object_list %}
 
 
 <h3> <a href="{% url 'blog:post_details' post.id %}">  {{ post }}</a></h3>
