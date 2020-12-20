@@ -1,10 +1,15 @@
 <h1>HOSSAM App For BLOG Details</h1>
 
-<h3>{{post}}</h3>
 
 
-<p><b>Content is </b>...... {{post.content}}</p><br>
+
+
 <hr>
 
 
     
+{% for post in object_list %}
+
+<h3> <a href="{% url 'blog:post_details' pk=post.pk %}">  {{ post.content }}</a></h3>
+   
+{% endfor %}
