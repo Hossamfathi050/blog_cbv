@@ -2,14 +2,8 @@
 
 
 
-
-
-<hr>
-
-
-    
-{% for post in object_list %}
-
-<h3> <a href="{% url 'blog:post_details' pk=post.pk %}">  {{ post.content }}</a></h3>
+<h3> <a href="{% url 'blog:post_edit' post.id %}">Edit this Post  </a></h3>
+<h4>{{post}}</h4>
    
-{% endfor %}
+{{ post.content }}
+{{ post.Category }}
