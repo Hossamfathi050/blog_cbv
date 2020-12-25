@@ -16,5 +16,8 @@ class PostUpdate(UpdateView):
 
 class PostDetail(DetailView):
     model = Post
+    template_name='post/post_details.html'
+
+
 
 
