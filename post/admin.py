@@ -5,5 +5,9 @@ from import_export.admin import ImportExportModelAdmin
 
 
 
-@
-admin.site.register(Post)
+@admin.register(Post)
+class PostImportExport(ImportExportModelAdmin):
+    pass
+
+
+#admin.site.register(Post)
