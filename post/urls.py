@@ -6,7 +6,7 @@ app_name='post'
 
 urlpatterns = [
 
-    path('cbv/', views.PostList.as_view(),name='post_list_cbv'),
+    path('', views.PostList.as_view(),name='post_list_cbv'),
 
     path('cbv/<int:pk>',views.PostDetail.as_view(),name='post_details_cbv'),
 

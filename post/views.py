@@ -8,6 +8,8 @@ from django.views.generic import ListView, DetailView, UpdateView
 
 class PostList(ListView):
     model = Post
+
+    
 class PostUpdate(UpdateView):
     model = Post
     fields =['title','content','category']
