@@ -1,10 +1,12 @@
 <h2>post_edit</h2>
 
-<form action="" method="POST">
+{% load bootstrap4 %}
+
+
+<form action="" method="POST" class="form" style="border: 55%;">
     {% csrf_token %}
-    {{form}}
-
-    <input type="submit" value="Edit Post Now">
-
+    {% bootstrap_form form %}
+    {% buttons %}
+        <button type="submit" class="btn btn-primary">Edit Post Now</button>
+    {% endbuttons %}
 </form>
-
