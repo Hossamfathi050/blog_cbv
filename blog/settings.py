@@ -42,6 +42,8 @@ INSTALLED_APPS = [
 
     'post',
     'bootstrap4',
+    'upload',
+    
     
 ]
 
