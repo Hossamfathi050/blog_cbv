@@ -5,5 +5,7 @@ class FileAdmin(models.Model):
     adminupload=models.FileField(upload_to='media')
     title= models.CharField(max_length=250)
 
+    
+
     def __str__(self):
         return self.title
